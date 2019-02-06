@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 /**
  * Write a description of class Main here.
  *
@@ -7,27 +7,37 @@
  */
 public class Main
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    public static void main(String[] args){
+        int number = (int)(Math.random() * 100 + 1);
+        
+        int count = 0;
+        
+        Scanner userInput = new Scanner(System.in);
+        int previousGuess = -1;    
+        while(true) {
+            System.out.println("Guess a Number from 1 to 100");
 
-    /**
-     * Constructor for objects of class Main
-     */
-    public Main()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+            int userGuess = userInput.nextInt();
+            System.out.println("You guess " + userGuess);
+        
+            if (number > userGuess){
+                System.out.println("too small");
+            } else if (number < userGuess){
+                System.out.println("too big");
+            } else if(number == userGuess){
+                System.out.println("correct guess");
+                System.out.println("Number of Guesses " + count);
+                break;
+            }
+            
+            if(previousGuess != userGuess){
+                count++;
+                previousGuess = userGuess;
+            }
+        }
+        
+        
+        
+        System.out.println("The magic number is " + number);
     }
 }
