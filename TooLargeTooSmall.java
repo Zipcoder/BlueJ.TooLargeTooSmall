@@ -17,13 +17,12 @@ public class TooLargeTooSmall {
     }
     
     public Integer guess(Integer g) {
+        int diff = g - this.chosenNum;
         
-        if (g == this.chosenNum) { // correct guess: 0
+        if (diff == 0) {
             return 0;
-        } else if (g > this.chosenNum) { // too big: 1
-            return 1;
         } else { // too small: -1
-            return -1;
+            return diff/Math.abs(diff);
         }
     }
 }
