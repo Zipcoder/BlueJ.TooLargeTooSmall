@@ -13,12 +13,21 @@ public class TooLargeTooSmall {
      */
     public TooLargeTooSmall(Integer seed) {
         // initialise instance variables
+        
         chosenNum = seed;
     }
     
     public Integer guess(Integer g) {
+        if (g > chosenNum) {
+            return 1;
+        }
+        else if(g < chosenNum){
+            return -1;
+        }
+        else{
+            return 0;
+        }
         
-        return chosenNum;
 
     }
 }
