@@ -27,7 +27,6 @@ public class TooLargeTooSmall {
         else{
             return 0;
         }
-        
 
     }
 }
