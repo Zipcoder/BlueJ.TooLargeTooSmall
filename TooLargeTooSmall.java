@@ -19,9 +19,9 @@ public class TooLargeTooSmall {
     public Integer guess(Integer g) {
         int diff = g - this.chosenNum;
         
-        if (diff == 0) {
+        if (diff == 0) { // equal
             return 0;
-        } else { // too small: -1
+        } else { // not equal
             return diff/Math.abs(diff);
         }
     }
