@@ -14,11 +14,32 @@ public class TooLargeTooSmall {
     public TooLargeTooSmall(Integer seed) {
         // initialise instance variables
         chosenNum = seed;
-    }
-    
-    public Integer guess(Integer g) {
         
-        return chosenNum;
-
     }
-}
+  
+    public Integer guess(Integer g) {
+        int LowHI = 0;
+        
+        if (g > chosenNum ){
+         
+            LowHI = 1;
+        
+       
+    }
+        else if ( g == chosenNum){
+        
+        LowHI = 0;
+    }
+        else
+        LowHI = -1;
+        
+         return LowHI;
+        
+        }
+        
+    } 
+        
+
+         
+    
+
