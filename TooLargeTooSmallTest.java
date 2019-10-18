@@ -50,7 +50,7 @@ public class TooLargeTooSmallTest
     @Test
     public void TestRun2()
     {
-        TooLargeTooSmall tooLarge1 = new TooLargeTooSmall(6);
+        TooLargeTooSmall tooLarge1 = new TooLargeTooSmall(6); 
         assertEquals(Integer.valueOf(-1), tooLarge1.guess(4));
     }
     
