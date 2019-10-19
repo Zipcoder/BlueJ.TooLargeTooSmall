@@ -7,18 +7,33 @@
  */
 public class TooLargeTooSmall {
     private Integer chosenNum;
+    
 
     /**
      * Constructor for objects of class TooLargeTooSmall
      */
     public TooLargeTooSmall(Integer seed) {
         // initialise instance variables
+         
         chosenNum = seed;
     }
     
     public Integer guess(Integer g) {
+        int highorLow = 0;
         
-        return chosenNum;
+            if (g < chosenNum) {
+                highorLow = -1;
+            }
+            else if (g > chosenNum) {
+                highorLow = 1;
+            }
+            else {
+             highorLow =  0;
+            }
+            
+        
+        
+        return highorLow;
 
     }
 }
