@@ -8,8 +8,8 @@ import org.junit.Test;
 /**
  * The test class TooLargeTooSmallTest.
  *
- * @author  (your name)
- * @version (a version number or a date)
+ * @David Comer
+ * @2/5/20
  */
 public class TooLargeTooSmallTest
 {
