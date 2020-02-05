@@ -1,6 +1,5 @@
 
-/**
- * Write a description of class TooLargeTooSmall here.
+/** Write a description of class TooLargeTooSmall here.
  *
  * @author (your name)
  * @version (a version number or a date)
@@ -17,8 +16,13 @@ public class TooLargeTooSmall {
     }
     
     public Integer guess(Integer g) {
-        
-        return chosenNum;
-
-    }
+        if (chosenNum == g) {
+            return 0;
+        } else if (chosenNum > g) {
+             return -1;
+            } else if (chosenNum < g) {
+                return 1;
+            } 
+            return chosenNum;
+    } 
 }
