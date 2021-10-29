@@ -16,9 +16,22 @@ public class TooLargeTooSmall {
         chosenNum = seed;
     }
     
-    public Integer guess(Integer g) {
+    public Integer guess(Integer guess) {
+        Integer result;
         
-        return chosenNum;
+        if(chosenNum == guess){
+        result = 0;
+        } 
+        else if (chosenNum > guess){
+        result = -1;
+        }
+        else{
+        result = 1;
+        }
+        
+        
+    
+        return result;
 
     }
 }
