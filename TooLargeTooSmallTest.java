@@ -45,6 +45,7 @@ public class TooLargeTooSmallTest
     {
         TooLargeTooSmall tooLarge1 = new TooLargeTooSmall(5);
         assertEquals(Integer.valueOf(0), tooLarge1.guess(5));
+
     }
     
     @Test
@@ -63,6 +64,7 @@ public class TooLargeTooSmallTest
         assertEquals(Integer.valueOf(0), tooLarge1.guess(2));
         assertEquals(Integer.valueOf(1), tooLarge1.guess(3));
     }
+    
     
    
 }
