@@ -17,8 +17,7 @@ public class TooLargeTooSmall {
     }
     
     public Integer guess(Integer g) {
-        
-        return chosenNum;
+         return new Integer(g.compareTo(this.chosenNum));
 
     }
 }
