@@ -18,7 +18,9 @@ public class TooLargeTooSmall {
     
     public Integer guess(Integer g) {
         
-        return chosenNum;
-
+        return g.compareTo(chosenNum);
+       // returns 0 if g is equal to chosenNum
+       // returns a negative if g < chosenNum
+       // return a positive if g > chosenNum
     }
 }
