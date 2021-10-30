@@ -17,8 +17,20 @@ public class TooLargeTooSmall {
     }
     
     public Integer guess(Integer g) {
+        int result = 0;
+        
+        if (g < chosenNum) {
+            result = -1;
+            return result;
+        } else if (g == chosenNum) {
+            result = 0;
+            return result;
+        } else if (g > chosenNum) {
+            result = 1;
+            return result;
+        }
+        System.out.println(result + ", " + chosenNum + ", " + g);
         
         return chosenNum;
-
     }
 }
